@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ruldane/CLionProjects/game/Game.cpp
+Game.hpp
+/home/ruldane/CLionProjects/game/Game.hpp
+
+/home/ruldane/CLionProjects/game/Game.hpp
+SFML/Graphics.hpp
+/home/ruldane/CLionProjects/game/SFML/Graphics.hpp
+SFML/System.hpp
+/home/ruldane/CLionProjects/game/SFML/System.hpp
+SFML/Window.hpp
+/home/ruldane/CLionProjects/game/SFML/Window.hpp
+
+/home/ruldane/CLionProjects/game/main.cpp
+SFML/Graphics.hpp
+-
+Game.hpp
+/home/ruldane/CLionProjects/game/Game.hpp
+

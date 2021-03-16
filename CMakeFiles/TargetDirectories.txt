@@ -1,0 +1,3 @@
+/home/ruldane/CLionProjects/game/CMakeFiles/rebuild_cache.dir
+/home/ruldane/CLionProjects/game/CMakeFiles/game.dir
+/home/ruldane/CLionProjects/game/CMakeFiles/edit_cache.dir
