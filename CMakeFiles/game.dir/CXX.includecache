@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
+/home/ruldane/CLionProjects/game/Bullet.hpp
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/ruldane/CLionProjects/game/Enemy.hpp
+SFML/Graphics.hpp
+-
+
 /home/ruldane/CLionProjects/game/Game.cpp
 Game.hpp
 /home/ruldane/CLionProjects/game/Game.hpp
 
 /home/ruldane/CLionProjects/game/Game.hpp
+map
+-
+string
+-
+sstream
+-
+Player.hpp
+/home/ruldane/CLionProjects/game/Player.hpp
+Bullet.hpp
+/home/ruldane/CLionProjects/game/Bullet.hpp
+Enemy.hpp
+/home/ruldane/CLionProjects/game/Enemy.hpp
+
+/home/ruldane/CLionProjects/game/Player.hpp
 SFML/Graphics.hpp
-/home/ruldane/CLionProjects/game/SFML/Graphics.hpp
+-
 SFML/System.hpp
-/home/ruldane/CLionProjects/game/SFML/System.hpp
-SFML/Window.hpp
-/home/ruldane/CLionProjects/game/SFML/Window.hpp
+-
+iostream
+-
 
 /home/ruldane/CLionProjects/game/main.cpp
 Game.hpp

@@ -53,10 +53,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/805/bin/cmake
+CMAKE_COMMAND = /snap/cmake/834/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/805/bin/cmake -E rm -f
+RM = /snap/cmake/834/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -102,19 +102,64 @@ CMakeFiles/game.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruldane/CLionProjects/game/Game.cpp -o CMakeFiles/game.dir/Game.cpp.s
 
+CMakeFiles/game.dir/Player.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Player.cpp.o: Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruldane/CLionProjects/game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Player.cpp.o -c /home/ruldane/CLionProjects/game/Player.cpp
+
+CMakeFiles/game.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruldane/CLionProjects/game/Player.cpp > CMakeFiles/game.dir/Player.cpp.i
+
+CMakeFiles/game.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruldane/CLionProjects/game/Player.cpp -o CMakeFiles/game.dir/Player.cpp.s
+
+CMakeFiles/game.dir/Bullet.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Bullet.cpp.o: Bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruldane/CLionProjects/game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/Bullet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Bullet.cpp.o -c /home/ruldane/CLionProjects/game/Bullet.cpp
+
+CMakeFiles/game.dir/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Bullet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruldane/CLionProjects/game/Bullet.cpp > CMakeFiles/game.dir/Bullet.cpp.i
+
+CMakeFiles/game.dir/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Bullet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruldane/CLionProjects/game/Bullet.cpp -o CMakeFiles/game.dir/Bullet.cpp.s
+
+CMakeFiles/game.dir/Enemy.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/Enemy.cpp.o: Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruldane/CLionProjects/game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/Enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Enemy.cpp.o -c /home/ruldane/CLionProjects/game/Enemy.cpp
+
+CMakeFiles/game.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruldane/CLionProjects/game/Enemy.cpp > CMakeFiles/game.dir/Enemy.cpp.i
+
+CMakeFiles/game.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruldane/CLionProjects/game/Enemy.cpp -o CMakeFiles/game.dir/Enemy.cpp.s
+
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/main.cpp.o" \
-"CMakeFiles/game.dir/Game.cpp.o"
+"CMakeFiles/game.dir/Game.cpp.o" \
+"CMakeFiles/game.dir/Player.cpp.o" \
+"CMakeFiles/game.dir/Bullet.cpp.o" \
+"CMakeFiles/game.dir/Enemy.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/main.cpp.o
 game: CMakeFiles/game.dir/Game.cpp.o
+game: CMakeFiles/game.dir/Player.cpp.o
+game: CMakeFiles/game.dir/Bullet.cpp.o
+game: CMakeFiles/game.dir/Enemy.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ruldane/CLionProjects/game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ruldane/CLionProjects/game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
