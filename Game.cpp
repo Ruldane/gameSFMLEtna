@@ -46,7 +46,7 @@ void Game::initGUI()
 
 void Game::initWorld()
 {
-    if (!this->worldBackgroundTex.loadFromFile("Textures/background1.jpg"))
+    if (!this->worldBackgroundTex.loadFromFile("Textures/background1.png"))
     {
         std::cout << "ERROR::GAME::COULD NOT LOAD BACKGROUND TEXTURE" << "\n";
     }
@@ -114,7 +114,7 @@ void Game::run()
     {
         this->updatePollEvents();
 
-        if(this->player->getHp() > 0)
+        if(this->player->getHp() > 0 && this->points > 1)
             this->update();
 
         this->render();
@@ -123,9 +123,11 @@ void Game::run()
 
 void Game::updatePollEvents()
 {
+
     sf::Event e;
     while (this->window->pollEvent(e))
     {
+
         if (e.Event::type == sf::Event::Closed)
             this->window->close();
         if (e.Event::KeyPressed && e.Event::key.code == sf::Keyboard::Escape)

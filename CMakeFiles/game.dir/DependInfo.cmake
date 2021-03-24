@@ -1,19 +1,18 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ruldane/CLionProjects/game/Bullet.cpp" "/home/ruldane/CLionProjects/game/CMakeFiles/game.dir/Bullet.cpp.o"
-  "/home/ruldane/CLionProjects/game/Enemy.cpp" "/home/ruldane/CLionProjects/game/CMakeFiles/game.dir/Enemy.cpp.o"
-  "/home/ruldane/CLionProjects/game/Game.cpp" "/home/ruldane/CLionProjects/game/CMakeFiles/game.dir/Game.cpp.o"
-  "/home/ruldane/CLionProjects/game/Player.cpp" "/home/ruldane/CLionProjects/game/CMakeFiles/game.dir/Player.cpp.o"
-  "/home/ruldane/CLionProjects/game/main.cpp" "/home/ruldane/CLionProjects/game/CMakeFiles/game.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ruldane/CLionProjects/game/Bullet.cpp" "CMakeFiles/game.dir/Bullet.cpp.o" "gcc" "CMakeFiles/game.dir/Bullet.cpp.o.d"
+  "/home/ruldane/CLionProjects/game/Enemy.cpp" "CMakeFiles/game.dir/Enemy.cpp.o" "gcc" "CMakeFiles/game.dir/Enemy.cpp.o.d"
+  "/home/ruldane/CLionProjects/game/Game.cpp" "CMakeFiles/game.dir/Game.cpp.o" "gcc" "CMakeFiles/game.dir/Game.cpp.o.d"
+  "/home/ruldane/CLionProjects/game/Player.cpp" "CMakeFiles/game.dir/Player.cpp.o" "gcc" "CMakeFiles/game.dir/Player.cpp.o.d"
+  "/home/ruldane/CLionProjects/game/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
