@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/Game.cpp.o CMakeFiles/game.dir/Player.cpp.o CMakeFiles/game.dir/Bullet.cpp.o CMakeFiles/game.dir/Enemy.cpp.o -o game  -lsfml-system -lsfml-graphics -lsfml-window 

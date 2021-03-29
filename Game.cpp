@@ -114,7 +114,7 @@ void Game::run()
     {
         this->updatePollEvents();
 
-        if(this->player->getHp() > 0 && this->points > 1)
+        if(!(this->player->getHp() > 0 && this->points > 1) && !this->player->getHp() <= 0)
             this->update();
 
         this->render();
@@ -128,9 +128,7 @@ void Game::updatePollEvents()
     while (this->window->pollEvent(e))
     {
 
-        if (e.Event::type == sf::Event::Closed)
-            this->window->close();
-        if (e.Event::KeyPressed && e.Event::key.code == sf::Keyboard::Escape)
+        if (e.Event::type == sf::Event::Closed || (e.Event::KeyPressed && e.Event::key.code == sf::Keyboard::Escape))
             this->window->close();
     }
 }
@@ -138,16 +136,16 @@ void Game::updatePollEvents()
 void Game::updateInput()
 {
     //Move player
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
         this->player->move(-1.f, 0.f);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         this->player->move(1.f, 0.f);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
         this->player->move(0.f, -1.f);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
         this->player->move(0.f, 1.f);
 
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && this->player->canAttack())
+    if ((sf::Mouse::isButtonPressed(sf::Mouse::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space))  && this->player->canAttack())
     {
         this->bullets.push_back(
                 new Bullet(
@@ -177,7 +175,6 @@ void Game::updateGUI()
 
 void Game::updateWorld()
 {
-
 }
 
 void Game::updateCollision()
@@ -240,7 +237,7 @@ void Game::updateEnemies()
     {
         enemy->update();
 
-        //Bullet culling (top of screen)
+        //enemies culling (bottom of screen)
         if (enemy->getBounds().top > this->window->getSize().y)
         {
             //Delete enemy
@@ -336,8 +333,10 @@ void Game::render()
     this->renderGUI();
 
     //Game over screen
-    if (this->player->getHp() <= 0)
+    if (this->player->getHp() <= 0) {
         this->window->draw(this->gameOverText);
+
+    }
 
     this->window->display();
 }

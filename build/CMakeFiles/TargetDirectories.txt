@@ -1,0 +1,7 @@
+/home/ruldane/CLionProjects/game/build/CMakeFiles/install/strip.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/edit_cache.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/game.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/rebuild_cache.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/list_install_components.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/install/local.dir
+/home/ruldane/CLionProjects/game/build/CMakeFiles/install.dir
